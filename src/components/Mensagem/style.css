@@ -1,0 +1,19 @@
+.component-mensagem {
+  display: grid;
+  grid-area: s; 
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+.component-mensagem .input-group {
+  padding: 5px 10px 5px 15px;
+  display: flex;
+  align-items: center;
+}
+
+.input-group  .component-input{
+  width: 95%;
+  height: 50%;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+}

@@ -1,0 +1,10 @@
+.component-topo {
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  z-index: 1; 
+  align-items: center;
+  padding: 1rem;
+  height: 1.5rem;
+  width: 97%;
+  grid-area: t; 
+}

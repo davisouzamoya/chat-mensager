@@ -1,0 +1,39 @@
+.component-mensagem-list {  
+  grid-area: m; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+
+.mensagemList{ 
+  list-style-type: none;
+  padding: 20px 0 20px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  max-height: calc(100vh - 15px - 15px);
+  overflow-y: scroll;
+}
+
+.mensagemList-chat{
+  display: flex;
+  align-items: center;
+}
+
+
+.Name{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Hour{
+  color: darkgray;
+  font-size: 9px;
+  margin-left: 10px;
+}
+
+.mensagem{
+  margin-top: 10px;
+}
