@@ -2,6 +2,7 @@ import React,{useState} from "react";
 import './style.css'
 import Api from '../../service/api.json'
 import Topo from '../topo/topo';
+import { Link } from "react-router-dom";
 
 
 function Menu(){
@@ -27,7 +28,7 @@ function Menu(){
       <p>Channels</p> 
       <ul className="MenuList">
         {channels.map(data =>(
-           <li key={data.id} onClick={() => nameChannel(data.name)} className="row">
+           <Link to={`/${data.id}`} key={data.id} className="row">
             <div id='icon'>#</div>
             
               {isFiltersVisible ? 
@@ -40,7 +41,7 @@ function Menu(){
                 </div>  
               </div>  
             }
-            </li>
+            </Link>
         ))}
       </ul>
   </div>
